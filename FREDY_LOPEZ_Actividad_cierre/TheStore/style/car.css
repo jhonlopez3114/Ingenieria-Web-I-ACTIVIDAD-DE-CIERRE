@@ -1,0 +1,33 @@
+.main__container {
+  display: flex;
+  align-items: center;
+  padding-top: 120px;
+  flex-direction: column;
+}
+
+.car-container__title,
+.car-container__description,
+.little_title {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.car-container__title {
+  background: #bd9ae0;
+}
+.img-item {
+  width: 100px;
+}
+.item-container__desc {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 15px 0 0;
+}
+.car-container__description {
+  border-bottom: 1px solid #111211;
+  padding: 4px 0 4px 0;
+}
+.car-container__description:hover {
+  background: #dddce1;
+}

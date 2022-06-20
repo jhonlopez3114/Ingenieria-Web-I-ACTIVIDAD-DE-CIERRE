@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="./index.html"
+            ><img src="./imgs/logos/logoApp.svg" alt=""
+          /></a>
+        </div>
+        <ul class="navbar__list">
+          <li><a href="index.html">Products</a></li>
+          <li><a href="./car.html">Car</a></li>
+          <li><a href="">Login</a></li>
+          <li><a href="./newProduct.html">New Product</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="main-container">
+      <div class="container">
+        <form class="form">
+          <div class="form__logo">
+            <img src="./imgs/logos/logoApp.svg" alt="" />
+          </div>
+          <div class="form__logo"><h2>New Product</h2></div>
+
+          <div class="form__container">
+            <div class="form__container-input">
+              <label for="">Name:</label>
+              <input
+                autocomplete="off"
+                class="input__product padding-right"
+                type="text"
+                placeholder="Product name"
+                name="name"
+              />
+              <i class="icon fa fa-cart-plus"></i>
+              <p class="leyenda_name">
+                <i class="icon_leyenda fa fa-warning"></i>Campo requerido
+              </p>
+            </div>
+            <div class="form__container-input">
+              <label for="">Price:</label>
+              <input
+                autocomplete="off"
+                class="input__product"
+                type="number"
+                placeholder="Product price"
+                name="price"
+              />
+              <p class="leyenda_price">
+                <i class="icon_leyenda fa fa-warning"></i>Campo requerido
+              </p>
+            </div>
+            <div class="form__container-input">
+              <label for="">Inventory:</label>
+              <input
+                autocomplete="off"
+                class="input__product"
+                type="number"
+                placeholder="Inventory"
+                name="inventory"
+              />
+              <p class="leyenda_inventory">
+                <i class="icon_leyenda fa fa-warning"></i>Campo requerido
+              </p>
+            </div>
+            <div class="form__container-button">
+              <button type="submit">CREATE PRODUCT</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="newProduct.js"></script>
+  </body>
+</html>
